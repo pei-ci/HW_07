@@ -15,7 +15,6 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-ALLOWED_HOSTS = ['*']
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +26,7 @@ SECRET_KEY = 'django-insecure-fd#4g(-1xysn4@rne23s)$v_*fx#a2@nrwk+$4grgl+7$kp=@y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
