@@ -26,7 +26,7 @@ def add_post(request):
     new_post.save()
     logger.debug("******* myhello_api"+title)
     if title:
-        return Response({'data':title},status=status.HTTP_200_OK)
+        return Response({'data':new_post.id},status=status.HTTP_200_OK)
     else:
         return  Response(
             {'res':'xxx'},status=status.HTTP_400_BAD_REQUEST)
